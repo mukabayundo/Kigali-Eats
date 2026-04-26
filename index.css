@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fefae0;
+    color: #283618;
+}
+
+/* Navigation */
+.main-nav {
+    background: #283618;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h2 {
+    color: #fefae0;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fefae0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #e0a800;
+    color: #283618;
+    transform: translateY(-2px);
+}
+
+.nav-links a.active {
+    background: #e0a800;
+    color: #283618;
+}
+
+/* Hero Section */
+.hero {
+     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), 
+                url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=1200&h=600&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+    color: #e0a800;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #e0a800;
+    color: #283618;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #f5c518;
+    transform: scale(1.05);
+}
+
+/* Featured Section */
+.featured-section {
+    padding: 4rem 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #283618;
+}
+
+.food-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.food-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+     flex: 0 0 calc(50% - 1rem);  /* 50% width = 2 divs kuri line */
+    max-width: calc(50% - 1rem);
+
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 1.5rem;
+}
+
+.food-info h3 {
+    background-image: -moz-linear-gradient( <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=400&h=250&fit=crop" alt="Fruits">);
+    color: #e0a800;
+    margin-bottom: 0.5rem;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #283618;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: #e0a800;
+}
+
+/* Newsletter */
+.newsletter {
+    
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-container h3 {
+    color: #283618;
+    font-size: 1.8rem;
+}
+
+.newsletter-container p {
+    color: #283618;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background: #283618;
+    margin:auto;
+    color: #fefae0;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #1a2a0f;
+    transform: scale(1.02);
+}
+
+/* Table */
+.info-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #283618;
+    color: white;
+}
+
+tr:hover {
+    background: #fefae0;
+}
+
+/* Media Section */
+.media-section {
+    background: #e9edc9;
+    padding: 3rem 2rem;
+}
+
+.media-card:hover{
+    background:white;
+     transform: scale(1.02);
+
+}
+
+.media-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.media-card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.media-card h3 {
+    color: #283618;
+    margin-bottom: 0.5rem;
+}
+
+/* Lists */
+.lists-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.list-box {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.list-box ol, .list-box ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.list-box li {
+    margin: 0.8rem 0;
+}
+
+/* External Links */
+.external-links {
+    text-align: center;
+    padding: 2rem;
+    background: #283618;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.external-links a {
+    color: #e0a800;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.external-links a:hover {
+    color: #f5c518;
+    text-decoration: underline;
+}
+
+
+footer {
+   background: #283618;
+    color: #fefae0;
+    text-align: center;
+    padding: 1.5rem;
+}
+}
+
+footer a {
+    color: #e0a800;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+
