@@ -205,3 +205,489 @@ footer {
     text-align: center;
     padding: 1.5rem;
 }
+/* ============================================ */
+/* SCREEN SIZE: 480px (Mobile Phones) */
+/* ============================================ */
+
+@media  (max-width: 480px) {
+    
+    /* ========== NAVIGATION ========== */
+    .main-nav {
+        padding: 0.6rem 1rem;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+    
+    .logo h2 {
+        font-size: 1.1rem;
+    }
+    
+    .nav-links {
+        gap: 0.4rem;
+         flex-direction: column;
+    }
+    
+    .nav-links a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+         flex-direction: column;
+    }
+    
+    /* ========== HERO SECTION ========== */
+    .hero {
+        height: 300px;
+        padding: 0 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+         flex-direction: column;
+    }
+    
+    .hero-content p {
+        font-size: 0.8rem;
+    }
+    
+    .btn-primary {
+        padding: 8px 18px;
+        font-size: 0.8rem;
+    }
+    
+    /* ========== FEATURED SECTION ========== */
+    .featured-section {
+        padding: 2rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .food-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .food-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .food-card img {
+        height: 150px;
+    }
+    
+    .food-info {
+        padding: 0.6rem;
+         flex-direction: column;
+
+    }
+    
+    .food-info h3 {
+        font-size: 1rem;
+    }
+    
+    .food-info p {
+        font-size: 0.75rem;
+    }
+    
+    .card-link {
+        font-size: 0.8rem;
+    }
+    
+    /* ========== NEWSLETTER SECTION ========== */
+    .newsletter {
+        padding: 1.5rem 1rem;
+    }
+    
+    .newsletter-container h3 {
+        font-size: 1.2rem;
+    }
+    
+    .newsletter-container p {
+        font-size: 0.75rem;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .form-group input {
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .btn-submit {
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    /* ========== TABLE SECTION - STACKED (1 COLUMN) ========== */
+    .info-section {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .table-wrapper {
+        overflow-x: visible !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Override any previous table styles */
+    table, thead, tbody, tr, th, td {
+        display: block !important;
+    }
+    
+    /* Hide original headers */
+    thead {
+        display: none !important;
+    }
+    
+    /* Each row becomes a card */
+    tr {
+        background: white;
+        margin-bottom: 0.8rem;
+        padding: 0.5rem;
+        border-radius: 12px;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+        border: 1px solid #e9edc9;
+    }
+    
+    /* Each cell becomes a row */
+    td {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 8px 6px !important;
+        border-bottom: 1px solid #e9edc9;
+        font-size: 0.7rem;
+        gap: 0.5rem;
+    }
+    
+    td:last-child {
+        border-bottom: none;
+    }
+    
+    /* Add labels */
+    td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: #283618;
+        min-width: 100px;
+        font-size: 0.7rem;
+    }
+    
+    /* ========== MEDIA SECTION ========== */
+    .media-section {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .media-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .media-card {
+        min-width: auto;
+        padding: 0.8rem;
+    }
+    
+    .media-card h3 {
+        font-size: 0.9rem;
+    }
+    
+    .video-container iframe {
+        height: 180px;
+    }
+    
+    /* ========== LISTS SECTION ========== */
+    .lists-section {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .list-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .list-box {
+        padding: 1rem;
+    }
+    
+    .list-box h3 {
+        font-size: 1rem;
+    }
+    
+    .list-box li {
+        font-size: 0.75rem;
+        margin: 0.5rem 0;
+    }
+    
+    /* ========== EXTERNAL LINKS ========== */
+    .external-links {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+    
+    .external-links a {
+        font-size: 0.8rem;
+    }
+    
+    /* ========== FOOTER ========== */
+    footer {
+        padding: 1rem;
+        font-size: 0.7rem;
+    }
+    
+    footer a {
+        font-size: 0.7rem;
+    }
+    
+    /* Prevent horizontal scroll */
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+/* ============================================ */
+/* SCREEN SIZE: 780px (Tablets & Large Mobile) */
+/* ============================================ */
+
+@media  (max-width: 780px) {
+    
+    /* ========== NAVIGATION ========== */
+    .main-nav {
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+    
+    .logo h2 {
+        font-size: 1.3rem;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .nav-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    /* ========== HERO SECTION ========== */
+    .hero {
+        height: 400px;
+        padding: 0 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .btn-primary {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+    
+    /* ========== FEATURED SECTION ========== */
+    .featured-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .food-grid {
+        gap: 1.5rem;
+    }
+    
+    .food-card {
+        flex: 0 0 calc(50% - 0.75rem);
+        max-width: calc(50% - 0.75rem);
+    }
+    
+    .food-card img {
+        height: 180px;
+    }
+    
+    .food-info {
+        padding: 1.2rem;
+    }
+    
+    .food-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .food-info p {
+        font-size: 0.85rem;
+    }
+    
+    /* ========== NEWSLETTER SECTION ========== */
+    .newsletter {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .newsletter-container h3 {
+        font-size: 1.5rem;
+    }
+    
+    .newsletter-container p {
+        font-size: 0.9rem;
+    }
+    
+    .form-group {
+        gap: 0.8rem;
+    }
+    
+    .form-group input {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-submit {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* ========== TABLE SECTION ========== */
+    .info-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    table {
+        min-width: 650px;
+    }
+    
+    th, td {
+        padding: 12px 10px;
+        font-size: 0.85rem;
+    }
+    
+    /* ========== MEDIA SECTION ========== */
+    .media-section {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .media-wrapper {
+        gap: 1.5rem;
+    }
+    
+    .media-card {
+        min-width: 220px;
+        padding: 0.8rem;
+    }
+    
+    .media-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* ========== LISTS SECTION ========== */
+    .lists-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .list-container {
+        gap: 1.5rem;
+    }
+    
+    .list-box {
+        padding: 1.5rem;
+    }
+    
+    .list-box h3 {
+        font-size: 1.2rem;
+    }
+    
+    .list-box li {
+        font-size: 0.9rem;
+        margin: 0.6rem 0;
+    }
+    
+    /* ========== EXTERNAL LINKS ========== */
+    .external-links {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .external-links a {
+        font-size: 0.9rem;
+    }
+    
+    /* ========== FOOTER ========== */
+    footer {
+        padding: 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    footer a {
+        font-size: 0.85rem;
+    }
+}
+
+/* ============================================ */
+/* ADDITIONAL: SCREEN SIZE 780px LANDSCAPE */
+/* ============================================ */
+
+@media screen and (max-width: 780px) and (orientation: landscape) {
+    .hero {
+        height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .food-card img {
+        height: 150px;
+    }
+    
+    .media-wrapper {
+        flex-direction: row;
+    }
+}
+
+/* ============================================ */
+/* FOR SCREENS BETWEEN 781px AND 1024px */
+/* ============================================ */
+
+@media screen and (min-width: 781px) and (max-width: 1024px) {
+    .food-card {
+        flex: 0 0 calc(33.333% - 1.33rem);
+        max-width: calc(33.333% - 1.33rem);
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
