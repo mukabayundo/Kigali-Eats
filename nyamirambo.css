@@ -1,6 +1,3 @@
-/* ============================================
-   BASE STYLES (Normal / Large Screens)
-   ============================================ */
 
 * {
     margin: 0;
@@ -17,7 +14,7 @@ body {
     width: 100%;
 }
 
-/* ===== NAVIGATION ===== */
+
 .main-nav {
     background: #283618;
     padding: 1rem 2rem;
@@ -68,7 +65,6 @@ body {
     color: #283618;
 }
 
-/* ===== HERO SECTION ===== */
 .page-hero {
      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), 
                 url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?w=1200&h=600&fit=crop');
@@ -91,7 +87,6 @@ body {
     margin: 0 auto;
 }
 
-/* ===== CONTENT WRAPPER ===== */
 .content-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +96,7 @@ body {
     padding: 0 2rem;
 }
 
-/* ===== MAIN CONTENT ===== */
+
 .main-content {
     flex: 2;
     background: white;
@@ -141,7 +136,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* ===== FOOD GALLERY ===== */
 .food-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -163,7 +157,7 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* ===== SIDEBAR ===== */
+
 .sidebar {
     flex: 1;
     background: white;
@@ -187,7 +181,6 @@ body {
     margin-top: 0;
 }
 
-/* Sidebar Tables */
 .sidebar table {
     width: 100%;
     margin: 1rem 0;
@@ -207,7 +200,7 @@ body {
     font-weight: 600;
 }
 
-/* Restaurant Table */
+
 .sidebar table:last-of-type {
     margin-top: 0.5rem;
 }
@@ -216,13 +209,11 @@ body {
     font-weight: 600;
 }
 
-/* Map iframe */
 .sidebar iframe {
     border-radius: 12px;
     margin-top: 0.5rem;
 }
 
-/* ===== BACK LINK ===== */
 .back-link {
     text-align: center;
     margin: 2rem 0 3rem;
@@ -244,7 +235,7 @@ body {
     transform: scale(1.05);
 }
 
-/* ===== FOOTER ===== */
+
 footer {
     background: #283618;
     color: #fefae0;
@@ -253,17 +244,12 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ============================================
-   RESPONSIVE DESIGN (ALL SCREENS MIN TO MAX)
-   ============================================ */
-
-/* VERY SMALL PHONES (280px - 375px) */
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
     body {
         font-size: 13px;
     }
     
-    /* Navigation */
+   
     .main-nav {
         padding: 0.6rem 0.8rem;
     }
@@ -294,7 +280,7 @@ footer {
         font-size: 0.8rem;
     }
     
-    /* Hero */
+    
     .page-hero {
         padding: 2rem 1rem;
     }
@@ -307,7 +293,7 @@ footer {
         font-size: 0.8rem;
     }
     
-    /* Content Wrapper */
+    
     .content-wrapper {
         flex-direction: column;
         gap: 1.2rem;
@@ -315,7 +301,7 @@ footer {
         padding: 0 1rem;
     }
     
-    /* Main Content */
+    
     .main-content {
         padding: 1rem;
     }
@@ -335,7 +321,7 @@ footer {
         margin-left: 1.2rem;
     }
     
-    /* Food Gallery - 2 columns on mobile */
+   
     .food-gallery {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.8rem;
@@ -345,7 +331,7 @@ footer {
         height: 120px;
     }
     
-    /* Sidebar */
+    
     .sidebar {
         padding: 1rem;
     }
@@ -367,7 +353,7 @@ footer {
         font-size: 0.7rem;
     }
     
-    /* Back Link */
+    
     .back-link {
         margin: 1rem 0 1.5rem;
     }
@@ -377,23 +363,17 @@ footer {
         font-size: 0.8rem;
     }
     
-    /* Footer */
+    
     footer {
         padding: 1rem;
         font-size: 0.7rem;
     }
     
-    /* Disable hover effects on touch */
-    .main-content:hover,
-    .sidebar:hover,
-    .food-gallery img:hover,
-    .back-link a:hover {
-        transform: none;
-    }
+    
 }
 
-/* EXTRA SMALL (280px and below) */
-@media screen and (max-width: 280px) {
+
+@media  (max-width: 280px) {
     .page-hero h1 {
         font-size: 1.3rem;
     }
@@ -423,8 +403,7 @@ footer {
     }
 }
 
-/* SMALL PHONES (376px - 576px) */
-@media screen and (min-width: 376px) and (max-width: 576px) {
+@media (min-width: 376px) and (max-width: 576px) {
     .main-nav {
         padding: 0.8rem 1rem;
     }
@@ -465,8 +444,8 @@ footer {
     }
 }
 
-/* MEDIUM PHONES & TABLETS (577px - 768px) */
-@media screen and (min-width: 577px) and (max-width: 768px) {
+
+@media (min-width: 577px) and (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         gap: 0.8rem;
@@ -496,8 +475,7 @@ footer {
     }
 }
 
-/* TABLETS & SMALL LAPTOPS (769px - 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media  (min-width: 769px) and (max-width: 1024px) {
     .nav-links {
         gap: 1rem;
     }
@@ -524,8 +502,8 @@ footer {
     }
 }
 
-/* DESKTOPS (1025px - 1280px) */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+@media (min-width: 1025px) and (max-width: 1280px) {
     .nav-container {
         max-width: 1100px;
     }
@@ -539,8 +517,8 @@ footer {
     }
 }
 
-/* LARGE DESKTOPS (1281px - 1600px) */
-@media screen and (min-width: 1281px) and (max-width: 1600px) {
+
+@media  (min-width: 1281px) and (max-width: 1600px) {
     .nav-container {
         max-width: 1200px;
     }
@@ -554,8 +532,8 @@ footer {
     }
 }
 
-/* ULTRA WIDE SCREENS (1601px - 1920px) */
-@media screen and (min-width: 1601px) and (max-width: 1920px) {
+
+@media  (min-width: 1601px) and (max-width: 1920px) {
     body {
         font-size: 18px;
     }
@@ -599,8 +577,8 @@ footer {
     }
 }
 
-/* 4K SCREENS (1921px and above) */
-@media screen and (min-width: 1921px) {
+
+@media (min-width: 1921px) {
     body {
         font-size: 20px;
     }
@@ -693,8 +671,7 @@ footer {
     }
 }
 
-/* LANDSCAPE MODE FOR MOBILES */
-@media screen and (max-width: 896px) and (orientation: landscape) {
+@media (max-width: 896px) and (orientation: landscape) {
     .main-nav {
         position: static;
         padding: 0.5rem 1rem;
@@ -732,49 +709,4 @@ footer {
     }
 }
 
-/* ACCESSIBILITY: REDUCED MOTION */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
-    }
-    
-    .main-content:hover,
-    .sidebar:hover,
-    .food-gallery img:hover,
-    .back-link a:hover {
-        transform: none;
-    }
-}
 
-/* PRINT STYLES */
-@media print {
-    .main-nav,
-    .back-link,
-    .sidebar iframe {
-        display: none;
-    }
-    
-    .page-hero {
-        background: #283618;
-        color: black;
-        padding: 1rem;
-    }
-    
-    .main-content,
-    .sidebar {
-        box-shadow: none;
-        border: 1px solid #ccc;
-        break-inside: avoid;
-    }
-    
-    body {
-        background: white;
-        color: black;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
